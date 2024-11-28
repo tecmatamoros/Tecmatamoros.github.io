@@ -89,6 +89,6 @@ button:hover {
 }
 @media (max-width: 768px) {
   #logo, #logo2 {
-    width: 10px; /* Reduce aún más el tamaño en móviles */
+    width: 60px; /* Reduce aún más el tamaño en móviles */
   }
 }
