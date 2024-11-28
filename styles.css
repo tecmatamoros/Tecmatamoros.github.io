@@ -88,7 +88,7 @@ button:hover {
   height: auto; /* Mantén la proporción */
   z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
 }
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   #logo, #logo2 {
     width: 50px; /* Reduce aún más el tamaño en móviles */
   }
