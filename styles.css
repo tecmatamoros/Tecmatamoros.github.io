@@ -72,18 +72,18 @@ button:hover {
 
 #logo2 {
   position: absolute; /* Posición absoluta respecto al contenedor */
-  top: 10px; /* Fijado desde la parte superior */
+  top: 30px; /* Fijado desde la parte superior */
   left: 10px; /* Fijado desde la parte izquierda */
-  width: 10px; /* Tamaño del logo */
+  width: 5px; /* Tamaño del logo */
   height: auto; /* Mantén la proporción */
   z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
 }
 
 #logo {
   position: absolute; /* Posición absoluta respecto al contenedor */
-  top: 10px; /* Fijado desde la parte superior */
+  top: 20px; /* Fijado desde la parte superior */
   right: 10px; /* Fijado desde la parte derecha */
-  width: 10px; /* Tamaño del logo */
+  width: 5px; /* Tamaño del logo */
   height: auto; /* Mantén la proporción */
   z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
 }
