@@ -70,6 +70,7 @@ button:hover {
   text-align: center;
 }
 
+
 #logo2 {
   position: absolute; /* Posición absoluta respecto al contenedor */
   top: 30px; /* Fijado desde la parte superior */
@@ -87,4 +88,8 @@ button:hover {
   height: auto; /* Mantén la proporción */
   z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
 }
-
+@media (max-width: 768px) {
+  #logo, #logo2 {
+    width: 50px; /* Reduce aún más el tamaño en móviles */
+  }
+}
