@@ -74,7 +74,7 @@ button:hover {
 #logo2 {
   position: absolute; /* Posición absoluta respecto al contenedor */
   top: 30px; /* Fijado desde la parte superior */
-  left: 25px; /* Fijado desde la parte izquierda */
+  left: 10px; /* Fijado desde la parte izquierda */
   width: 100px; /* Tamaño del logo */
   height: auto; /* Mantén la proporción */
   z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
@@ -83,7 +83,7 @@ button:hover {
 #logo {
   position: absolute; /* Posición absoluta respecto al contenedor */
   top: 20px; /* Fijado desde la parte superior */
-  right: 25px; /* Fijado desde la parte derecha */
+  right: 10px; /* Fijado desde la parte derecha */
   width: 100px; /* Tamaño del logo */
   height: auto; /* Mantén la proporción */
   z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
