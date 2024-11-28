@@ -1,0 +1,89 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(45deg, #1e90ff, #ff6347);
+  color: white;
+  background-image: url(images/fondo7.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#menu, #game, #credits {
+  max-width: 600px;
+  margin: 0 auto;
+}
+h1 {
+  color: #fff;
+  font-size: 2.5em;
+}
+.config, .symbols {
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #b12e0d;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #353535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  color: #fff;
+  cursor: pointer;
+}
+.cell.winning {
+  background: rgb(56, 24, 24);
+}
+.scores p {
+  margin: 5px;
+  font-size: 1.2em;
+}
+#credits {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.815);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  text-align: center;
+}
+#logo {
+  position: fixed;
+  top: 20px;
+  right: 100px;
+  width: 110px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantén la proporción */
+  z-index: 1000; /* Asegúrate de que el logo esté encima del contenido */
+  
+}
+#logo2 {
+  position: fixed;
+  top: 30px;
+  left: 100px;
+  width: 120px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantén la proporción */
+  z-index: 1000; /* Asegúrate de que el logo esté encima del contenido */
+  
+}

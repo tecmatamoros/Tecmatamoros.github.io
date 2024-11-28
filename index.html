@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tres en Raya</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <img id="logo" src="images/logo.jpg" alt="Logo del juego">
+  <img id="logo2" src="images/logo2.jpg" alt="Logo del juego2">
+  <!-- Pantalla de inicio -->
+  <div id="menu">
+    <h1>Juego:</h1>
+    <h1>Tres en Raya</h1>
+    <div>
+      <h2>Configuración</h2>
+      <div class="config">
+        <label for="player1Name">Nombre Jugador 1:</label>
+        <input type="text" id="player1Name" placeholder="Jugador 1">
+      </div>
+      <div class="config">
+        <label for="player2Name">Nombre Jugador 2 (o IA):</label>
+        <input type="text" id="player2Name" placeholder="Jugador 2">
+      </div>
+      <h3>Selecciona tus símbolos</h3>
+      <div class="symbols">
+        <label>Jugador 1:
+          <select id="symbol1">
+            <option>⚡</option>
+            <option>⚙</option>
+            <option>🔧</option>
+            <option>🛠</option>
+            <option>🔌</option>
+            <option>💡</option>
+            <option>🔩</option>
+          </select>
+        </label>
+        <label>Jugador 2:
+          <select id="symbol2">
+            <option>🚀</option>
+            <option>📐</option>
+            <option>⚒️</option>
+            <option>🏭</option>
+            <option>🧰</option>
+            <option>🤖</option>
+            <option>🌡️</option>
+          </select>
+        </label>
+      </div>
+      <h3>Modo de Juego</h3>
+      <button onclick="startGame('multiplayer')">Multijugador</button>
+      <button onclick="startGame('ai')">Contra la IA</button>
+      <button onclick="showCredits()">Créditos</button>
+    </div>
+  </div>
+
+  <!-- Pantalla de créditos -->
+  <div id="credits" style="display: none;">
+    <h2>Créditos</h2>
+    <p>Creado por:</p>
+    <ul>
+      <li>Benjamin Herver Ponciano</li>
+      <li>Jhael Alejandro Castillo Balderas</li>
+      <li>Brandon Haziel Hernandez Jimenez</li>
+    </ul>
+
+    <p>Con ayuda de:</p>
+    <ul>
+      <li>Chatgpt</li>
+    </ul>
+
+    <button onclick="goToMenu()">Volver al Menú</button>
+  </div>
+
+  <!-- Pantalla de juego -->
+  <div id="game" style="display: none;">
+    <div class="game-header">
+      <h2 id="turn">Turno de: Jugador 1</h2>
+      <div class="scores">
+        <p id="score1">Jugador 1: 0</p>
+        <p id="score2">Jugador 2: 0</p>
+      </div>
+      <button onclick="goToMenu()">Menú Principal</button>
+    </div>
+    <div class="board">
+      <div class="cell" onclick="makeMove(0)"></div>
+      <div class="cell" onclick="makeMove(1)"></div>
+      <div class="cell" onclick="makeMove(2)"></div>
+      <div class="cell" onclick="makeMove(3)"></div>
+      <div class="cell" onclick="makeMove(4)"></div>
+      <div class="cell" onclick="makeMove(5)"></div>
+      <div class="cell" onclick="makeMove(6)"></div>
+      <div class="cell" onclick="makeMove(7)"></div>
+      <div class="cell" onclick="makeMove(8)"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
