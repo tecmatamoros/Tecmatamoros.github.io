@@ -74,7 +74,7 @@ button:hover {
   position: absolute; /* Posición absoluta respecto al contenedor */
   top: 10px; /* Fijado desde la parte superior */
   left: 10px; /* Fijado desde la parte izquierda */
-  width: 100px; /* Tamaño del logo */
+  width: 10px; /* Tamaño del logo */
   height: auto; /* Mantén la proporción */
   z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
 }
@@ -83,17 +83,8 @@ button:hover {
   position: absolute; /* Posición absoluta respecto al contenedor */
   top: 10px; /* Fijado desde la parte superior */
   right: 10px; /* Fijado desde la parte derecha */
-  width: 100px; /* Tamaño del logo */
+  width: 10px; /* Tamaño del logo */
   height: auto; /* Mantén la proporción */
   z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
 }
 
-/* Para que todo se vea bien en dispositivos pequeños */
-@media (max-width: 768px) {
-  #logo, #logo2 {
-    width: 80px; /* Tamaño más pequeño para pantallas pequeñas */
-  }
-}
-body {
-  padding-top: 120px; /* Aumenta el margen superior para evitar que los logos interfieran */
-}
