@@ -94,3 +94,6 @@ button:hover {
     width: 80px; /* Tamaño más pequeño para pantallas pequeñas */
   }
 }
+body {
+  padding-top: 120px; /* Aumenta el margen superior para evitar que los logos interfieran */
+}
