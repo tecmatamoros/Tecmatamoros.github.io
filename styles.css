@@ -69,21 +69,28 @@ button:hover {
   border-radius: 10px;
   text-align: center;
 }
-#logo {
-  position: fixed;
-  top: 20px;
-  right: 100px;
-  width: 110px; /* Ajusta el tamaño del logo */
-  height: auto; /* Mantén la proporción */
-  z-index: 1000; /* Asegúrate de que el logo esté encima del contenido */
-  
-}
+
 #logo2 {
-  position: fixed;
-  top: 30px;
-  left: 100px;
-  width: 120px; /* Ajusta el tamaño del logo */
+  position: absolute; /* Posición absoluta respecto al contenedor */
+  top: 10px; /* Fijado desde la parte superior */
+  left: 10px; /* Fijado desde la parte izquierda */
+  width: 100px; /* Tamaño del logo */
   height: auto; /* Mantén la proporción */
-  z-index: 1000; /* Asegúrate de que el logo esté encima del contenido */
-  
+  z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+}
+
+#logo {
+  position: absolute; /* Posición absoluta respecto al contenedor */
+  top: 10px; /* Fijado desde la parte superior */
+  right: 10px; /* Fijado desde la parte derecha */
+  width: 100px; /* Tamaño del logo */
+  height: auto; /* Mantén la proporción */
+  z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+}
+
+/* Para que todo se vea bien en dispositivos pequeños */
+@media (max-width: 768px) {
+  #logo, #logo2 {
+    width: 80px; /* Tamaño más pequeño para pantallas pequeñas */
+  }
 }
